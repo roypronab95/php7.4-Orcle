@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    container_name: phpOrclTest
+    image: roy95/pbl-img-ss
+    hostname: phpOrclTest
+    ports:
+      - "82:80"
+    volumes:
+      - "./:/var/www/html"

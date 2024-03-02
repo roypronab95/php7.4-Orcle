@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    container_name: phpOrclTest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: php74-orcl
+    hostname: phpOrclTest
+    ports:
+      - "82:80"
+    volumes:
+      - "./:/var/www/html"
